@@ -26,7 +26,7 @@ func main() {
 ```bash
 ./main -u root -p 123456 -h localhost -P 3306
 ```
-### ps -ef验证，将看到password替换为“******”，不想显示密码长度可自行修改代码
+### ps -ef验证，将看到password替换为“******”
 ```bash
 ./main -u root -p ****** -h localhost -P 3306
 ```
