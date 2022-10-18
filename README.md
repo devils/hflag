@@ -1,9 +1,16 @@
 # hflag
-golang隐藏进程命令参数，从flag修改而来。Hidden process command parameters for golang, modify from flag.
-用法同flag，只增加HideArg函数，详见https://pkg.go.dev/flag.
+golang隐藏进程命令参数，从flag修改而来。Hidden process command parameters for golang, modified from flag.
+用法同flag，只增加HideArg函数，详见https://pkg.go.dev/flag 。
 ## 例：隐藏password
 ### 代码
 ```golang
+package main
+
+import (
+    "time"
+    "github.com/devils/hflag"
+)
+
 func main() {
     hflag.StringVar(&user, "u", "root", "account, default: root")
     hflag.StringVar(&password, "p", "", "password, default:  ")
